@@ -42,7 +42,6 @@ public class task1 {
 	
 	@Test
 	public void mainTask2() {
-		
 		driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/dynamic_loading/1");
 		
@@ -72,18 +71,13 @@ public class task1 {
 	}
 	
 	@Test
-	public void mainTask4() {
-		
+	public void mainTask4() {		
 		driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/javascript_error");
 		driver.manage().logs().get(LogType.BROWSER);
 		
 		LogEntries entries = driver.manage().logs().get(LogType.BROWSER);
 		entries.filter(Level.SEVERE);
-		System.out.println(" are we done ? :) ");
-		
-		
+		System.out.println(" are we done ? :) ");		
 	}
-	
-	
 }
